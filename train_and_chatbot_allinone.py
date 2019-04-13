@@ -14,18 +14,6 @@ with open("train_qa.txt", "rb") as fp:   # Unpickling
 with open("test_qa.txt", "rb") as fp:   # Unpickling
     test_data =  pickle.load(fp)
 
-
-## Exploring the Format of the Data
-
-type(test_data)
-type(train_data)
-
-' '.join(train_data[0][0])
-
-' '.join(train_data[0][1])
-
-
-
 ##### make vocab, add yes and no
 
 vocab = set()
@@ -67,7 +55,7 @@ len(train_story_text)
 
 len(train_story_seq)
 
-### Functionalize Vectorization
+### function for vectorisation 
 ## x = words, xq = qs, y = ans. returns tuple for unpacking
 def vectorize_stories(data, word_index=tokenizer.word_index, max_story_len=max_story_len,max_question_len=max_question_len):
 
