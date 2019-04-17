@@ -1,4 +1,4 @@
-# chat-bot
+# qna chat-bot
 simple question and answer chat bot using keras, tensorflow backend
 
 The aim was to make a simple commandline interface using keras with tensorflow backend where the user could ask simple questions that the bot would answer. 
